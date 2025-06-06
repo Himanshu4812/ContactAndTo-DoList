@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: url("bgImage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.details {
+    height: 450px;
+    width: 400px;
+    /* background-color:  rgba(255, 255, 255, 0.1); */
+    position: relative;
+    top: 45%;
+    left: 65%; 
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    justify-content: space-evenly;
+}
+
+.details form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.details form input{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    height: 50px;
+    width: 280px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.details form textarea{
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    height: 170px;
+    width: 280px;
+}
+
+button{
+    height: 35px;
+    width: 80px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 100px;
+    margin-top: -10px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(255, 111, 0);
+    border: none;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+  background-color: rgb(255, 145, 0);
+}
+
+.todo{
+    width: 10px;
+    position: fixed;
+    top:5%;
+    left: 85vw;
+}
+@media (max-width: 1280px) {
+  .todo{
+    left: 83%;
+  }
+}
+@media (max-width: 870px){
+    .todo{
+        left: 75%;
+    }
+    .details{
+        left: 72%;
+    }
+}
+@media (max-width: 580px){
+    .todo{
+        left: 62%;
+    }
+}
+
+
+.todo button{
+    height: 40px;
+    width: 100px;
+    background-color:rgba(18, 67, 227, 0.683);
+}
+.todo button a{
+    text-decoration: none;
+    color:white;
+}
